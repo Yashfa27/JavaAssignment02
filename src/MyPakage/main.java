@@ -23,12 +23,13 @@ public class main {
         //parse this json data into java object and store in list
         List<Book> bookListobject = gson.fromJson(readFile, bookList);
 
+        //calling all methods
         bookProcessor processor = new bookProcessor(bookListobject);
         processor.displayAllBooks();
         processor.displayAuthor();
-       processor.avgPriceBooks();
-       processor.titleBooks();
-       processor.specificCategoryBook();
+        processor.avgPriceBooks();
+        processor.titleBooks();
+        processor.specificCategoryBook();
 
         }
     }
